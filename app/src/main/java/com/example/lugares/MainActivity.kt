@@ -29,19 +29,19 @@ class MainActivity : AppCompatActivity() {
 
         //Metodo de login
         binding.btLogin.setOnClickListener() {
-            hacerlogin();
+            hacelogin();
         }
 
         //Metodo de registro
         binding.btRegister.setOnClickListener() {
-            hacerRegister();
+            haceRegister();
         }
 
     }
 
 
 
-    private fun hacerRegister() {
+    private fun haceRegister() {
         var email = binding.etMail.text.toString()
         var clave = binding.etClave.text.toString()
 
@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
             actualiza(usuario)
         }
 
-        private fun hacerlogin() {
+        private fun hacelogin() {
             var email = binding.etMail.text.toString()
             var clave = binding.etClave.text.toString()
 
